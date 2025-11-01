@@ -1,4 +1,10 @@
 /* CSS Reset and Global Styles */
+
+.rubik-iso-regular {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
