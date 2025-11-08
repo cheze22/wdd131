@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Cristhian Nefi Dorado Aguilar</title>
+    <meta name="description" content="A responsive temple album showcasing beautiful temples from around the world">
+    <meta name="author" content="Cristhian Nefi Dorado Aguilar">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS - Mobile First -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>⛪ Temple Album</h1>
+        <button id="hamburger" aria-label="Toggle Menu">☰</button>
+        <nav id="menu">
+            <a href="#" class="active">Home</a>
+            <a href="#old">Old</a>
+            <a href="#new">New</a>
+            <a href="#large">Large</a>
+            <a href="#small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sacred Temples Gallery</h1>
+        <div class="gallery">
+            <figure>
+                <img src="images/salt.jpeg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo.jpeg" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/italy.jpeg" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manila.jpeg" alt="Manila Philippines Temple" loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paysonjpeg.jpeg"alt="Payson Utah Temple" loading="lazy">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mexico.jpeg" alt="Mexico City Temple" loading="lazy">
+                <figcaption>Mexico City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/washington.jpeg" alt="Washington D.C. Temple" loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cardstone.jpeg" alt="Cardston Alberta Temple" loading="lazy">
+                <figcaption>Cardston Alberta Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bountiful.jpeg" alt="Bountiful Utah Temple" loading="lazy">
+                <figcaption>Bountiful Utah Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Cristhian Nefi Dorado Aguilar | Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

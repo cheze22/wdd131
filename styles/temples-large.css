@@ -1,0 +1,69 @@
+
+
+@media (min-width: 768px) {
+    
+    /* Header adjustments */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Hide hamburger button on larger screens */
+    #hamburger {
+        display: none;
+    }
+
+    /* Show navigation as horizontal flex */
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1.5rem;
+        border-radius: 25px;
+    }
+
+    nav a:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Main heading larger */
+    main > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Gallery Grid - 2 columns on tablets */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    
+    /* Gallery Grid - 3 columns on large screens */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* Increase font sizes */
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main > h1 {
+        font-size: 3rem;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+    }
+}
+
