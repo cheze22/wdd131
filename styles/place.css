@@ -1,0 +1,252 @@
+/* CSS Variables - Colores inspirados en la bandera de Bolivia */
+:root {
+    --primary-color: #D52B1E; /* Rojo */
+    --secondary-color: #F9E300; /* Amarillo */
+    --accent-color: #007A3D; /* Verde */
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+    --background-light: #ffffff;
+    --background-gray: #f4f4f4;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --max-width: 1200px;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Main Layout */
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 0;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: var(--background-gray);
+}
+
+.introduction h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.introduction p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Weather Section */
+.weather {
+    background-color: var(--background-light);
+}
+
+.weather h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.weather-icon-mobile {
+    flex-shrink: 0;
+}
+
+.weather-icon-mobile img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-details p {
+    margin-bottom: 0.5rem;
+}
+
+#windchill {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Attractions Section */
+.attractions {
+    background-color: var(--background-gray);
+}
+
+.attractions h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.attraction-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.attraction {
+    background-color: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow);
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.attraction h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+/* Call to Action */
+.cta {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    text-align: center;
+    color: var(--text-dark);
+    border-radius: 8px;
+    margin: 2rem 1rem;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Media Query para vista amplia (tablet y desktop) */
+@media (min-width: 640px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hero img {
+        height: 400px;
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    /* Pseudo-elemento para el ícono del clima en vista amplia */
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.5rem;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .introduction p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media Query para desktop */
+@media (min-width: 1024px) {
+    .hero img {
+        height: 500px;
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .introduction {
+        padding: 4rem 3rem;
+    }
+
+    .introduction p {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

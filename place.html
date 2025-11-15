@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre La Paz, Bolivia - la ciudad más alta del mundo con su rica cultura y paisajes impresionantes">
+    <meta name="author" content="Tu Nombre">
+    <title>La Paz, Bolivia - Ciudad Maravillosa</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>La Paz, Bolivia</h1>
+        <p>La ciudad más alta del mundo</p>
+    </header>
+
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 640px)">
+                <img src="images/hero-small.webp" alt="Vista panorámica de La Paz con el Illimani de fondo" width="640" height="300">
+            </picture>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h2>Bienvenido a La Paz</h2>
+            <p>La Paz es la sede de gobierno de Bolivia y una de las ciudades más fascinantes de Sudamérica. Situada a más de 3,600 metros sobre el nivel del mar, esta ciudad única combina tradición andina con modernidad urbana.</p>
+            <p>Rodeada por las majestuosas montañas de la Cordillera Real, con el imponente Illimani como guardián, La Paz ofrece paisajes espectaculares, una cultura vibrante y una historia rica que se remonta a la época precolombina.</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Clima</h2>
+            <div class="weather-info">
+                <div class="weather-icon-mobile">
+                    <img src="images/weather-icon.svg" alt="Parcialmente nublado">
+                </div>
+                <div class="weather-details">
+                    <p><strong>Temperatura:</strong> 15°C</p>
+                    <p><strong>Condiciones:</strong> Parcialmente nublado</p>
+                    <p><strong>Viento:</strong> 8 km/h</p>
+                    <p><strong>Sensación térmica:</strong> <span id="windchill"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section class="attractions">
+            <h2>Principales Atractivos</h2>
+            <div class="attraction-grid">
+                <article class="attraction">
+                    <h3>Teleférico de La Paz</h3>
+                    <p>El sistema de teleférico urbano más alto y extenso del mundo, que conecta La Paz con El Alto y ofrece vistas panorámicas espectaculares de la ciudad.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Valle de la Luna</h3>
+                    <p>Un paisaje surrealista de formaciones rocosas erosionadas que parecen de otro planeta, ubicado a pocos kilómetros del centro de la ciudad.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Mercado de las Brujas</h3>
+                    <p>Un mercado tradicional donde se venden remedios naturales, amuletos y artesanías relacionadas con las creencias ancestrales aymaras.</p>
+                </article>
+                <article class="attraction">
+                    <h3>Calle Jaén</h3>
+                    <p>Una calle colonial perfectamente preservada con arquitectura del siglo XVIII, que alberga varios museos y cafés con encanto.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>¿Listo para explorar?</h2>
+            <p>La Paz te espera con sus brazos abiertos y su cultura única. Descubre la magia de los Andes en cada esquina.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | La Paz, Bolivia | Tu Nombre</p>
+        <p>Última modificación: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
