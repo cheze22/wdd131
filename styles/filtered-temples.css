@@ -1,0 +1,195 @@
+/* MOBILE FIRST STYLES - Base styles for mobile devices */
+
+/* Root Variables for Easy Theming */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #1abc9c;
+    --hover-color: #16a085;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+    --white: #ffffff;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-family: 'Rubik Iso', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+/* Hamburger Button - Only visible on mobile */
+#hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#hamburger:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Navigation - Hidden by default on mobile */
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+/* Ajustar la posición de la 'X' en la esquina superior derecha */
+nav.open + #hamburger {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 1000;
+    transform: none;
+    background: var(--primary-color);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+nav a.active {
+    background-color: var(--accent-color);
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Filter Title */
+#filter-title {
+    font-family: 'Rubik Iso', sans-serif;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Gallery Grid - 1 column on mobile */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Temple Card Styles */
+.temple-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.temple-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Temple Info Section */
+.temple-info {
+    padding: 1.5rem;
+}
+
+.temple-info h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.temple-info p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.temple-info strong {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* FOOTER STYLE */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
