@@ -3,125 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan - Bolivia Adventure Tours</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        h1 { color: #1a472a; }
-        h2 { color: #2a5f3d; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
-        .site-map { background: #f4f4f4; padding: 20px; margin: 20px 0; border-radius: 5px; }
-        .color-palette { display: flex; gap: 20px; margin: 20px 0; }
-        .color-box { width: 100px; height: 100px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
-    </style>
+    <meta name="description" content="Discover the wonders of Bolivia with Bolivia Adventure Tours. Explore the Salar de Uyuni, Amazon rainforest, and ancient ruins.">
+    <title>Bolivia Adventure Tours - Experience the Magic</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <h1>Bolivia Adventure Tours - Site Plan</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Bolivia Adventure Tours</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/services.html">Destinations</a></li>
+                <li><a href="pages/about.html">About Us</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <h2>Purpose</h2>
-    <p>Bolivia Adventure Tours is a tourism website designed to promote and facilitate booking of guided tour packages to Bolivia's most iconic destinations. The site targets adventure travelers, cultural enthusiasts, and nature lovers aged 25-65 with disposable income for travel experiences.</p>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explore the Heart of South America</h2>
+                <p>Experience unforgettable adventures in Bolivia's most breathtaking destinations</p>
+                <a href="pages/services.html" class="cta-button">Explore Destinations</a>
+            </div>
+            <img src="images/salar-hero.jpeg" alt="Salar de Uyuni salt flats under starry sky" loading="lazy">
+        </section>
 
-    <h2>Target Audience</h2>
-    <ul>
-        <li>Adventure travelers seeking authentic experiences</li>
-        <li>Cultural tourists interested in indigenous communities</li>
-        <li>Nature enthusiasts and wildlife lovers</li>
-        <li>Age range: 25-65 years old</li>
-        <li>International travelers from North America, Europe, and developed Asia-Pacific regions</li>
-        <li>Moderate to high income level</li>
-    </ul>
+        <section class="featured-destinations">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid">
+                <article class="destination-card">
+                    <img src="images/salar-de-uyuni.jpeg" alt="Salar de Uyuni" loading="lazy">
+                    <h3>Salar de Uyuni</h3>
+                    <p>The world's largest salt flat, creating a mirror effect during rainy season. A surreal landscape that feels like another planet.</p>
+                    <a href="pages/services.html#salar">Learn More</a>
+                </article>
 
-    <h2>Site Structure</h2>
-    <div class="site-map">
-        <pre>
-Bolivia Adventure Tours
-│
-├── Home (index.html)
-│   ├── Featured Destinations
-│   ├── Why Choose Us
-│   └── Testimonials
-│
-├── Destinations (pages/services.html)
-│   ├── Salar de Uyuni - 3 Days
-│   ├── Amazon Rainforest - 4 Days
-│   ├── Lake Titicaca - 2 Days
-│   └── Potosí Mining - 1 Day
-│
-├── About Us (pages/about.html)
-│   ├── Our Story
-│   ├── Mission & Values
-│   ├── Team Members
-│   └── Why Choose Us
-│
-├── Contact (pages/contact.html)
-│   ├── Contact Form
-│   ├── Contact Information
-│   └── FAQ Section
-│
-└── References (references.html)
-        </pre>
-    </div>
+                <article class="destination-card">
+                    <img src="images/amazon-rainforest.jpeg" alt="Amazon Rainforest" loading="lazy">
+                    <h3>Amazon Rainforest</h3>
+                    <p>Immerse yourself in biodiversity. Spot jaguars, pink river dolphins, and exotic birds in their natural habitat.</p>
+                    <a href="pages/services.html#amazon">Learn More</a>
+                </article>
 
-    <h2>Design Elements</h2>
+                <article class="destination-card">
+                    <img src="images/titicaca-lake.jpeg" alt="Lake Titicaca" loading="lazy">
+                    <h3>Lake Titicaca</h3>
+                    <p>Visit the floating islands of the Uros people and experience authentic indigenous culture on the world's highest navigable lake.</p>
+                    <a href="pages/services.html#titicaca">Learn More</a>
+                </article>
+            </div>
+        </section>
 
-    <h3>Color Palette</h3>
-    <div class="color-palette">
-        <div class="color-box" style="background-color: #1a472a;">Primary Green #1a472a</div>
-        <div class="color-box" style="background-color: #2a5f3d;">Secondary Green #2a5f3d</div>
-        <div class="color-box" style="background-color: #d4af37; color: #1a472a;">Accent Gold #d4af37</div>
-        <div class="color-box" style="background-color: #f4f4f4; color: #1a472a;">Light Gray #f4f4f4</div>
-        <div class="color-box" style="background-color: #ffffff; color: #1a472a; border: 1px solid #ccc;">White #ffffff</div>
-    </div>
+        <section class="why-choose">
+            <h2>Why Choose Bolivia Adventure Tours?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Expert Local Guides</h3>
+                    <p>Our guides are born and raised in Bolivia with deep knowledge of local culture and geography.</p>
+                </div>
+                <div class="feature">
+                    <h3>Sustainable Travel</h3>
+                    <p>We prioritize environmental conservation and support local communities in every tour.</p>
+                </div>
+                <div class="feature">
+                    <h3>Customized Itineraries</h3>
+                    <p>Tailor your adventure to match your interests and fitness level.</p>
+                </div>
+                <div class="feature">
+                    <h3>Safe & Professional</h3>
+                    <p>All tours meet international safety standards with certified equipment and insurance.</p>
+                </div>
+            </div>
+        </section>
 
-    <h3>Typography</h3>
-    <ul>
-        <li>Primary Font: Arial, sans-serif (accessible, professional)</li>
-        <li>Heading sizes: H1 (36px), H2 (28px), H3 (22px)</li>
-        <li>Body text: 16px line-height 1.6 for readability</li>
-    </ul>
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonials-container" id="testimonialsContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li>Responsive design (mobile, tablet, desktop)</li>
-        <li>Lazy loading for all images</li>
-        <li>Interactive tour booking buttons</li>
-        <li>Contact form with validation</li>
-        <li>Dynamic testimonials carousel</li>
-        <li>FAQ accordion section</li>
-        <li>Newsletter subscription</li>
-        <li>localStorage for saved preferences</li>
-        <li>Mobile hamburger navigation</li>
-    </ul>
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive deals and travel inspiration</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
-    <h2>JavaScript Functionality</h2>
-    <ul>
-        <li>Mobile menu toggle</li>
-        <li>Form validation and submission</li>
-        <li>Dynamic testimonials from data</li>
-        <li>FAQ accordion functionality</li>
-        <li>Team member cards generation</li>
-        <li>localStorage for user preferences and cart</li>
-        <li>Tour booking modal</li>
-        <li>Filter tours by duration</li>
-    </ul>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Bolivia Adventure Tours</h4>
+                <p>Bringing you closer to nature and culture.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/services.html">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@boliviaadventure.com</p>
+                <p>Phone: +591-2-2440000</p>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <p><a href="references.html">References & Citations</a></p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Bolivia Adventure Tours. BYU WDD131, Cristhian Nefi Dorado Aguilar</p>
+    </footer>
 
-    <h2>Accessibility Standards</h2>
-    <ul>
-        <li>WCAG 2.1 Level AA compliance</li>
-        <li>Semantic HTML structure</li>
-        <li>Proper alt text for all images</li>
-        <li>Color contrast ratios meet accessibility standards</li>
-        <li>Keyboard navigation support</li>
-        <li>Form labels and error messages</li>
-    </ul>
-
-    <h2>SEO Optimization</h2>
-    <ul>
-        <li>Meta descriptions on all pages</li>
-        <li>Semantic HTML headings</li>
-        <li>Image alt attributes</li>
-        <li>Mobile-friendly design</li>
-        <li>Fast loading times</li>
-        <li>Proper URL structure</li>
-    </ul>
-
+    <script src="scripts/main.js"></script>
 </body>
 </html>
